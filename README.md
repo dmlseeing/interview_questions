@@ -2,6 +2,7 @@
 This is summary of the learning of interview_questions.
 
 
+
 DeleteListNode_1_18.java  是第18道面试题的代码，要求在O(1)时间内删除链表结点
 
 这道题的难点在于时间复杂度的控制，按常规删除结点的方法，需要遍历链表，时间复杂度为O(n)；
