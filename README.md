@@ -3,13 +3,7 @@ This is summary of the learning of interview_questions.
 
 
 ## 1.DeleteListNode_1_18.java
-### try the function of you
-* try the function of *
-+ try the function of +
-- try the function of -  
 
-  - Like this
-  - And this
 
 
 ## 3.ReMatch.java
@@ -17,9 +11,9 @@ This is summary of the learning of interview_questions.
 
   之所以书中的代码运行后会报错,  
 
-  是因为书中的str即str.charAt(0),pattern即pattern.charAt(0);  
+  是因为书中的str指向str.charAt(0),pattern指向pattern.charAt(0);  
 
-  而字符串的检测向后移一位,只需要str+1即可;  
+  而字符串的检测向后移一位,也只需要str+1即可;  
 
   所以代码出错的主要原因是把对str == "\0" && pattern == "\0"的判断理解为空字符串的处理  
 
