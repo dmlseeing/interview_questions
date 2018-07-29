@@ -1,7 +1,7 @@
 # interview_questions
-This is summary of the learning of interview_questions.
-
-
+This is summary of the learning of interview_questions.  
+  
+  
 ## 1. DeleteListNode_1_18.java
 * **题目要求**
   * DeleteListNode_1_18.java  是第18道面试题的代码，要求在O(1)时间内删除链表结点  
@@ -24,7 +24,10 @@ This is summary of the learning of interview_questions.
     
 ## 2. DeleteListNode_2_18.java  
 * **题目要求**  
-
+ * DeleteListNode_2_18.java  是第18道面试题的代码，要求删除链表中重复的结点  
+* **题目分析**
+ * 难点: 要确保当前结点的前一个结点始终与下一个没有重复的结点连接在一起  
+         需要对头结点与后面结点重复的情况做特殊处理
 
 ## 3. ReMatch.java
 * **代码学习小结**  
