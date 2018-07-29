@@ -2,7 +2,7 @@
 This is summary of the learning of interview_questions.
 
 
-## 1.DeleteListNode_1_18.java
+## 1. DeleteListNode_1_18.java
 * **题目要求**
   * DeleteListNode_1_18.java  是第18道面试题的代码，要求在O(1)时间内删除链表结点  
 * **题目分析**
@@ -21,9 +21,10 @@ This is summary of the learning of interview_questions.
   pListHead == pToBeDeleted  
   * 链表为空或要删除的结点为空  
   pListHead == null || pToBeDeleted == null  
-  
+    
+## 2. DeleteListNode_2_18.java
 
-## 3.ReMatch.java
+## 3. ReMatch.java
 * **代码学习小结**  
 
   之所以书中的代码运行后会报错,  
