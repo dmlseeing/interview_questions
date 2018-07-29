@@ -62,4 +62,4 @@ This is summary of the learning of interview_questions.
 * **编程小结**  
   * 书中的代码使用*str,**str和&str,有'整型变量的指针类型'和'整型变量的指针的指针类型（二级指针）'的使用,  
     但Java没有该数据类型的使用,所以无法直接用str扫描当前所在字符.  
-    为了解决这个问题,根据Java实际情况,代码中定义了字符串_str_,用以实时记录str移动到的位置
+    为了解决这个问题,根据Java实际情况,代码中定义了字符串_str_,用以实时记录str移动到的位置.
