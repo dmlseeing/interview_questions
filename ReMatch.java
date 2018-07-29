@@ -102,8 +102,11 @@ public class ReMatch {
 		
 //		键盘输入str和pattern值
 		Scanner input = new Scanner(System.in);
-		String str = input.next();
-		String pattern = input.next();
+// 		用next()无法输入空字符串
+// 		String str = input.next();
+// 		String pattern = input.next();
+		String str = input.nextLine();
+		String pattern = input.nextLine();
 //		System.out.println(str.length());
 //		System.out.println(pattern.length());
 		
