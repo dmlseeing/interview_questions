@@ -45,4 +45,6 @@ This is summary of the learning of interview_questions.
     在C语言中,'\0' 是字符串的结束符，任何字符串之后都会自动加上'\0'.  
     但Java定义的字符串的最后一位并不是'\0',这样无法判断字符串的遍历是否结束,  
     所以在main函数里面定义完str和pattern后,要在两个字符串后面再加上"\0",  
-    确保能够判断字符串的遍历是否结束,从而返回相应的Boolean值. 
+    确保能够判断字符串的遍历是否结束,从而返回相应的Boolean值.  
+      
+## 4. ReMatch.java
