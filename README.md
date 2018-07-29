@@ -47,4 +47,10 @@ This is summary of the learning of interview_questions.
     所以在main函数里面定义完str和pattern后,要在两个字符串后面再加上"\0",  
     确保能够判断字符串的遍历是否结束,从而返回相应的Boolean值.  
       
-## 4. ReMatch.java
+## 4.  NumericString.java  
+* **题目要求**  
+  * NumericString.java  是第20道面试题的代码,要求编写函数判断字符串是否表示数值  
+* **题目分析**  
+  * 要点: 涉及或(||)和与(&&)的使用  
+* **情况分析**  
+  * 表示数值的字符串遵循模式 A[.[B]][e|EC] 或 .B[e|EC]
