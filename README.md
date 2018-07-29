@@ -3,8 +3,25 @@ This is summary of the learning of interview_questions.
 
 
 ## 1.DeleteListNode_1_18.java
-
-
+* **题目要求**
+  * DeleteListNode_1_18.java  是第18道面试题的代码，要求在O(1)时间内删除链表结点  
+* **题目分析**
+  * 难点: 在于时间复杂度的控制，按常规删除结点的方法，需要遍历链表，时间复杂度为O(n)  
+  * 技巧: 在时间复杂度为O(1)的情况下，我们想删除一个结点并不一定要删除这个结点本身  
+         _可以先把下一个结点的内容复制出来覆盖被删除结点的内容，然后把下一个结点删除_
+* **情况分析**  
+  * _代码基于假设：要删除的结点在链表中_  
+  * 从有多个结点的链表的中间删除一个结点  
+  pToBeDeleted.m_pNext != null  
+  * 从有多个结点的链表中删除头结点  
+  pToBeDeleted.m_pNext != null  
+  * 从有多个结点的链表中删除尾结点  
+  pNode.m_pNext != pToBeDeleted  
+  * 从只有一个结点的链表中删除唯一的结点  
+  pListHead == pToBeDeleted  
+  * 链表为空或要删除的结点为空  
+  pListHead == null || pToBeDeleted == null  
+  
 
 ## 3.ReMatch.java
 * **代码学习小结**  
