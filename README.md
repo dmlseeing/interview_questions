@@ -78,4 +78,19 @@ This is summary of the learning of interview_questions.
   * 数组长度的输入: 输入数组前需先输入数组长度,才能够定义数组  
   * 类变量的定义: (是否使用static的区别)  
     由于代码中ReorderOddEven()函数没有定义为static,所以调用该方法前应该定义一个变量.  
-    如果函数定义为static,则可以直接使用ReorderOddEven()方法.
+    如果函数定义为static,则可以直接使用ReorderOddEven()方法.  
+      
+## 6. ReorderArrays.java  
+* **题目要求**  
+  * ReorderArrays.java  是第21道面试题的延伸,根据ReorderArray.java扩展的解法,要求所写函数能够解决一系列同类型的调整数组顺序问题.  
+* **编程小结**  
+  * 代码中新加一个func()方法,根据问题要求修改return值就可以实现不同的调整要求,如:  
+    * return array[n] % 2 == 0; 使奇数位于偶数前面  
+    * return array[n] > 0; 使负数位于非负数前面  
+    * return array[n] % 3 != 0; 使能被3整除的数位于其余不能被3整除的数前面  
+  * 根据对同类型的问题分析,func()的参数值可以不用修改,所以当问题要求改变时,只需要修改return值而Reorder()方法不需要更改.  
+  * 补充: 对Reorder()函数中四个pBegin < pEnd判断语句的理解  
+    * 第一个 while(pBegin < pEnd): 当pBegin < pEnd时,继续扫描数组；当pBegin < pEnd不成立时,结束对数组的扫描  
+    * 第二个 while(pBegin < pEnd): pBegin < pEnd是基本要求  
+    * 第三个 while(pBegin < pEnd): 可能经过第二个循环后,pBegin < pEnd仍成立,但pEnd--过程该条件不再成立,就不用继续往前扫描了  
+    * 第四个 if(pBegin < pEnd): 当pBegin < pEnd不成立时,可以避免元素的错误交换
