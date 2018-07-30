@@ -42,7 +42,7 @@ public class ReorderArray {
 		//如果测试用例的输入没有数组长度,则代码需要做修改
 		int length = input.nextInt();
 		int [] array = new int [length];
-		System.out.println("Enter numbers of the array and split them with space");
+		System.out.println("Enter numbers of the array and split them with space :");
 		for (int index = 0; index < array.length; index++)
 			array [index] = input.nextInt();
 		
