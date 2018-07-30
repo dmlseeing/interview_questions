@@ -47,7 +47,7 @@ This is summary of the learning of interview_questions.
     所以在main函数里面定义完str和pattern后,要在两个字符串后面再加上"\0",  
     确保能够判断字符串的遍历是否结束,从而返回相应的Boolean值.  
       
-## 4.  NumericString.java  
+## 4. NumericString.java  
 * **题目要求**  
   * NumericString.java  是第20道面试题的代码,要求编写函数判断字符串是否表示数值  
 * **题目分析**  
@@ -62,4 +62,11 @@ This is summary of the learning of interview_questions.
 * **编程小结**  
   * 书中的代码使用*str,**str和&str,有'整型变量的指针类型'和'整型变量的指针的指针类型（二级指针）'的使用,  
     但Java没有该数据类型的使用,所以无法直接用str扫描当前所在字符.  
-    为了解决这个问题,根据Java实际情况,代码中定义了字符串_str_,用以实时记录str移动到的位置.
+    为了解决这个问题,根据Java实际情况,代码中定义了字符串_str_,用以实时记录str移动到的位置.  
+    
+## 5. ReorderArray.java  
+* **题目要求**  
+  * ReorderArray.java  是第21道面试题的代码,要求编写函数调整数组顺序使奇数位于偶数前面  
+* **题目分析**  
+  * 思路: 从头扫描数组,遇到偶数,将该数拿出,移动后面所有数字,然后把该数放到数组最后一个位置,直到整个数组扫描结束.  
+    这个方法能够实现题目要求,但时间复杂度为O(n*n),应该从时间复杂度方面考虑优化.
