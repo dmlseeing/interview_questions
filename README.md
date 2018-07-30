@@ -74,5 +74,8 @@ This is summary of the learning of interview_questions.
     这个函数关键的点就是pBegin和pEnd的修改以及数组元素交换的方法.  
   * 要点: 如果pBegin位的数字为偶数,而pEnd位的数字为奇数,则交换这两个数字  
 * **编程小结**  
-  * 这道编程题比较简单,不过有两点值得注意:  
-    * 数组长度的输入
+这道编程题比较简单,不过有两点值得注意:  
+  * 数组长度的输入: 输入数组前需先输入数组长度,才能够定义数组  
+  * 类变量的定义:(static的使用)  
+    由于ReorderOddEven()函数没有定义为static,所有调用该方法前应该定义一个变量.  
+    如果函数定义为static,则可以直接使用ReorderOddEven()方法.
