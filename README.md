@@ -152,5 +152,5 @@ This is summary of the learning of interview_questions.
     之后结点的比较和修改都按照这个步骤,依次可以考虑使用递归方法  
   * 代码中递归方法为Merge(),通过修改传入的参数,可以继续对链表下一个结点的遍历  
     其中最关键的一句代码是  pMergedHead.m_pNext = Merge(pHead1.m_pNext, pHead2);  
-    在pHead1头结点的值小于pHead2的情况下,继续判断pHead1的下一个结点与pHead2的头结点的大小
+    在pHead1头结点的值小于pHead2的情况下,继续判断pHead1的下一个结点与pHead2的头结点的大小  
     而pHead2头结点的值小于pHead1的情况同理
