@@ -153,4 +153,17 @@ This is summary of the learning of interview_questions.
   * 代码中递归方法为Merge(),通过修改传入的参数,可以继续对链表下一个结点的遍历  
     其中最关键的一句代码是  pMergedHead.m_pNext = Merge(pHead1.m_pNext, pHead2);  
     在pHead1头结点的值小于pHead2的情况下,继续判断pHead1的下一个结点与pHead2的头结点的大小  
-    而pHead2头结点的值小于pHead1的情况同理
+    而pHead2头结点的值小于pHead1的情况同理  
+      
+## 11. SubstructureOfBinaryTree.java  
+* **题目要求**  
+  * SubstructureOfBinaryTree.java  是第26道面试题的代码,要求输入的两棵二叉树bt1和bt2,判断bt2是否为bt1的子结构  
+* **题目分析**  
+  * 思路: (1) 在树bt1中找到和树bt2的根结点值相等的结点  
+    (2) 判断由上述结点引出的二叉树是否包含树bt2
+  * 要点: (1) 判断结点是否为空,若为空,需做相应处理  
+    (2) 对double类型值的考虑,在判断结点值是否相等时,不能直接用==  
+    (3) 由于结点存储的值类型为double,所以在根据输入创建树时,对于输入的格式有要求(详见代码分析)  
+    以书中的一组测试用例为例:  
+    bt1:  889##24##7##7##  
+    bt2:  89##2##  
